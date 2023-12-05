@@ -34,8 +34,9 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
-  --bs-secondary: #6c757d;
+  --bs-primary: #db5f12;
+  --bs-secondary: #395e75;
+  --bs-tertiary: #128EDB;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -61,8 +62,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #fff;
+  --bs-body-bg: #101010;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -106,10 +107,10 @@ body {
 
 hr {
   margin: 1rem 0;
-  color: inherit;
+  color: var(--bs-tertiary);
   border: 0;
   border-top: 1px solid;
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -118,7 +119,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #202d3a;
+  color: var(--bs-tertiary);
 }
 
 h1, .h1 {
@@ -8036,13 +8037,11 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-primary) !important;
 }
 
 .text-secondary {
-  --bs-text-opacity: 1;
-  color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+  color: var(--bs-secondary) !important;
 }
 
 .text-success {
@@ -10826,10 +10825,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  padding-top: 3.375rem;
-  color: #6c757d;
-}
 
 @media (min-width: 992px) {
   body {
@@ -10927,7 +10922,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #202d3a;
+  background-color: var(--bs-tertiary);
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10951,7 +10946,7 @@ section.resume-section {
   padding-right: 1rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  max-width: 75rem;
+  max-width: 80rem;
 }
 section.resume-section .resume-section-content {
   width: 100%;
